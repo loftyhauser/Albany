@@ -293,6 +293,7 @@ list (APPEND SOURCES
   disc/Adapt_NodalDataVector.cpp
   disc/Albany_DiscretizationFactory.cpp
   disc/Albany_MeshSpecs.cpp
+  disc/Albany_DOFManager.cpp
   )
 list (APPEND HEADERS
   disc/Adapt_NodalDataBase.hpp
@@ -306,6 +307,7 @@ list (APPEND HEADERS
   disc/Albany_DiscretizationFactory.hpp
   disc/Albany_MeshSpecs.hpp
   disc/Albany_NodalDOFManager.hpp
+  disc/Albany_DOFManager.hpp
   )
 
 #stk
