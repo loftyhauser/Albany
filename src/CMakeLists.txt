@@ -144,7 +144,7 @@ list (APPEND SOURCES
   utility/Albany_Hessian.cpp
   utility/Albany_StringUtils.cpp
   utility/Albany_ThyraCrsMatrixFactory.cpp
-  utility/Albany_ThyraBlockedCrsMatrixFactory.cpp
+  # utility/Albany_ThyraBlockedCrsMatrixFactory.cpp
   utility/Albany_ThyraUtils.cpp
   utility/Albany_TpetraThyraUtils.cpp
   utility/Albany_UnivariateDistribution.hpp
@@ -168,7 +168,7 @@ list (APPEND HEADERS
   utility/Albany_GlobalLocalIndexerTpetra.hpp
   utility/Albany_Hessian.hpp
   utility/Albany_ThyraCrsMatrixFactory.hpp
-  utility/Albany_ThyraBlockedCrsMatrixFactory.hpp
+  # utility/Albany_ThyraBlockedCrsMatrixFactory.hpp
   utility/Albany_ThyraUtils.hpp
   utility/Albany_TpetraThyraUtils.hpp
   utility/VariableMonitor.hpp
@@ -312,7 +312,7 @@ list (APPEND HEADERS
 list(APPEND SOURCES
   disc/stk/Albany_AsciiSTKMesh2D.cpp
   disc/stk/Albany_AsciiSTKMeshStruct.cpp
-  disc/stk/Albany_BlockedSTKDiscretization.cpp
+  # disc/stk/Albany_BlockedSTKDiscretization.cpp
   disc/stk/Albany_ExtrudedSTKMeshStruct.cpp
   disc/stk/Albany_GenericSTKFieldContainer.cpp
   disc/stk/Albany_GenericSTKMeshStruct.cpp
@@ -334,7 +334,7 @@ list (APPEND HEADERS
   disc/stk/Albany_AbstractSTKMeshStruct.hpp
   disc/stk/Albany_AsciiSTKMeshStruct.hpp
   disc/stk/Albany_AsciiSTKMesh2D.hpp
-  disc/stk/Albany_BlockedSTKDiscretization.hpp
+  # disc/stk/Albany_BlockedSTKDiscretization.hpp
   disc/stk/Albany_ExtrudedSTKMeshStruct.hpp
   disc/stk/Albany_GenericSTKMeshStruct.hpp
   disc/stk/Albany_GmshSTKMeshStruct.hpp
