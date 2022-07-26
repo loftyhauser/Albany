@@ -1214,6 +1214,19 @@ void STKDiscretization::computeVectorSpaces()
       m_part_dim_2_dof_manager[part_name][1] = node_dof_mgr;
     }
   }
+
+//////////////////////////////////////////////////
+  // cmp vs from DOF mgr with old vs
+  auto soldof = this->getNewDOFManager();
+  if (not sameAs(m_overlap_vs,soldof->ov_vs())) {
+    auto old_gids = getGlobalElements(m_overlap_vs);
+    auto new_gids = getGlobalElements(soldof->ov_vs());
+    *out << "old:\n";
+    describe(m_overlap_vs,*out,Teuchos::EVerbosityLevel::VERB_EXTREME);
+    *out << "new:\n";
+    describe(soldof->ov_vs(),*out,Teuchos::EVerbosityLevel::VERB_EXTREME);
+  }
+///////////////////////////////////////////////////
 }
 
 void
